@@ -19,11 +19,11 @@ public class program {
         market_Xiaomi.addProduct(new Xiaomi("Zeen2", "Intel i3", 512, 8, 11000));
         market_Xiaomi.addProduct(new Xiaomi("RedmiBook 13", "Intel I7", 256, 16, 12000));
 
-        System.out.printf("Ноутбуки ASUS [%d]", market_ASUS.getSize());
+        System.out.printf("Ноутбуки ASUS [%d]\n", market_ASUS.getSize());
         for(var item : market_ASUS){
             System.out.println(item);
         }
-        System.out.printf("Ноутбуки Xiaomi [%d]", market_Xiaomi.getSize());
+        System.out.printf("Ноутбуки Xiaomi [%d]\n", market_Xiaomi.getSize());
         for(var item : market_Xiaomi){
             System.out.println(item);
         }
