@@ -21,11 +21,15 @@ public class program {
 
         System.out.printf("Ноутбуки ASUS [%d]\n", market_ASUS.getSize());
         for(var item : market_ASUS){
-            System.out.println(item);
+            if (item.getClass() == Asus.class){
+                System.out.println(item);
+            }
         }
         System.out.printf("Ноутбуки Xiaomi [%d]\n", market_Xiaomi.getSize());
         for(var item : market_Xiaomi){
-            System.out.println(item);
+            if (item.getClass() == Xiaomi.class){
+                System.out.println(item);
+            }
         }
     }
 }
